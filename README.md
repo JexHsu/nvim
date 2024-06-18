@@ -1,6 +1,6 @@
 ## Installation
 
 ```sh
-curl -fLo ~/.config/nvim --create-dirs \
-    https://github.com/JexHsu/neovim.git
+    sudo rm -rf ~/.config/nvim
+    \ git clone https://github.com/JexHsu/nvim.git ~/.config/nvim
 ```
