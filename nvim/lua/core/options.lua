@@ -1,5 +1,7 @@
 local opt = vim.opt
 
+opt.modifiable = true
+
 -- 行号
 opt.relativenumber = true
 opt.number = true
@@ -14,13 +16,13 @@ opt.autoindent = true
 opt.wrap = false
 
 -- 光标行
-opt.cursorline = true
+opt.cursorline = false
 
 -- 启用鼠标
 opt.mouse:append("a")
 
 -- 系统剪贴板
--- opt.clipboard:append("unnamedplus")
+opt.clipboard:append({'unnamedplus'})
 
 -- 默认新窗口右和下
 opt.splitright = true
@@ -33,4 +35,5 @@ opt.smartcase = true
 -- 外观
 opt.termguicolors = true
 opt.signcolumn = "yes"
-vim.cmd[[colorscheme tokyonight-moon]]
+vim.cmd[[colorscheme tokyonight-moon]] -- strom day night moon ]]
+-- vim.cmd("colorscheme rose-pine-moon") --- -main -moon -dawn

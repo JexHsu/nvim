@@ -71,6 +71,33 @@ return require('packer').startup(function(use)
 
   use {'ojroques/nvim-bufdel'}
 
+  use { 'michaelb/sniprun', run = 'sh ./install.sh'}
+
+  use { "rose-pine/neovim", as = "rose-pine" }
+
+  use {
+      'goolord/alpha-nvim',
+      requires = {
+          'nvim-tree/nvim-web-devicons',
+          'nvim-lua/plenary.nvim'
+      },
+      config = function ()
+          require'alpha'.setup(require'alpha.themes.dashboard'.config)
+      end
+  }
+
+  use({
+    "aserowy/tmux.nvim",
+
+    config = function()
+      return require("tmux").setup({
+        copy_sync = {
+          enable = false
+        },
+      })
+    end
+  })
+
   if packer_bootstrap then
     require('packer').sync()
   end

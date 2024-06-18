@@ -10,7 +10,7 @@ require('fine-cmdline').setup({
       width = 25,
     },
     border = {
-      style = "single",
+      style = "rounded",
       text = {
         top = "[Howdy?]",
         top_align = "center",
