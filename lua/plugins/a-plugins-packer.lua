@@ -98,6 +98,14 @@ return require('packer').startup(function(use)
     end
   })
 
+  -- Improved Yank and Put functionalities for Neovim
+  use("gbprod/yanky.nvim")
+  require("yanky").setup({
+      -- your configuration comes here
+      -- or leave it empty to use the default settings
+      -- refer to the configuration section below
+  })
+
   if packer_bootstrap then
     require('packer').sync()
   end
