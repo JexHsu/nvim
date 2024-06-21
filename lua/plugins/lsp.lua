@@ -11,7 +11,7 @@ require("mason").setup({
 require("mason-lspconfig").setup({
   -- 确保安装，根据需要填写
   ensure_installed = {
-    "lua_ls","ast_grep","cssmodules_ls","graphql",
+    "lua_ls","ast_grep","cssmodules_ls","graphql", "volar",
   },
 })
 
