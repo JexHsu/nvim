@@ -75,16 +75,8 @@ return require('packer').startup(function(use)
 
   use { "rose-pine/neovim", as = "rose-pine" }
 
-  use {
-      'goolord/alpha-nvim',
-      requires = {
-          'nvim-tree/nvim-web-devicons',
-          'nvim-lua/plenary.nvim'
-      },
-      config = function ()
-          require'alpha'.setup(require'alpha.themes.dashboard'.config)
-      end
-  }
+  -- the fancy start screen for neovim
+  use {'mhinz/vim-startify'}
 
   use({
     "aserowy/tmux.nvim",
