@@ -104,6 +104,11 @@ _G.packer_plugins = {
     path = "/Users/xuji/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
+  ["feline.nvim"] = {
+    loaded = true,
+    path = "/Users/xuji/.local/share/nvim/site/pack/packer/start/feline.nvim",
+    url = "https://github.com/freddiehaddad/feline.nvim"
+  },
   ["fine-cmdline.nvim"] = {
     loaded = true,
     path = "/Users/xuji/.local/share/nvim/site/pack/packer/start/fine-cmdline.nvim",
@@ -133,6 +138,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/xuji/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
+  },
+  ["nightfox.nvim"] = {
+    loaded = true,
+    path = "/Users/xuji/.local/share/nvim/site/pack/packer/start/nightfox.nvim",
+    url = "https://github.com/EdenEast/nightfox.nvim"
   },
   ["nui.nvim"] = {
     loaded = true,
@@ -189,11 +199,6 @@ _G.packer_plugins = {
     path = "/Users/xuji/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
-  ["rose-pine"] = {
-    loaded = true,
-    path = "/Users/xuji/.local/share/nvim/site/pack/packer/start/rose-pine",
-    url = "https://github.com/rose-pine/neovim"
-  },
   sniprun = {
     loaded = true,
     path = "/Users/xuji/.local/share/nvim/site/pack/packer/start/sniprun",
@@ -205,15 +210,9 @@ _G.packer_plugins = {
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
   ["tmux.nvim"] = {
-    config = { "\27LJ\2\n]\0\0\4\0\6\0\b6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\2D\0\2\0\14copy_sync\1\0\1\14copy_sync\0\1\0\1\venable\1\nsetup\ttmux\frequire\0" },
     loaded = true,
     path = "/Users/xuji/.local/share/nvim/site/pack/packer/start/tmux.nvim",
     url = "https://github.com/aserowy/tmux.nvim"
-  },
-  ["tokyonight.nvim"] = {
-    loaded = true,
-    path = "/Users/xuji/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
-    url = "https://github.com/folke/tokyonight.nvim"
   },
   ["vim-startify"] = {
     loaded = true,
@@ -233,10 +232,6 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: tmux.nvim
-time([[Config for tmux.nvim]], true)
-try_loadstring("\27LJ\2\n]\0\0\4\0\6\0\b6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\2D\0\2\0\14copy_sync\1\0\1\14copy_sync\0\1\0\1\venable\1\nsetup\ttmux\frequire\0", "config", "tmux.nvim")
-time([[Config for tmux.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

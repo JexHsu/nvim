@@ -24,10 +24,9 @@ vim.cmd([[
 
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
-  use 'folke/tokyonight.nvim' -- 主题
   use {
     'nvim-lualine/lualine.nvim',  -- 状态栏
-    requires = { 'kyazdani42/nvim-web-devicons'}  -- 状态栏图标
+    requires = { 'kyazdani42/nvim-web-devicons',}  -- 状态栏图标
   }
   use {
     'nvim-tree/nvim-tree.lua',  -- 文档树
@@ -54,6 +53,7 @@ return require('packer').startup(function(use)
   use "numToStr/Comment.nvim" -- gcc和gc注释
   use "windwp/nvim-autopairs" -- 自动补全括号
 
+  -- A snazzy bufferline for Neovim
   use "akinsho/bufferline.nvim" -- buffer分割线
   use "lewis6991/gitsigns.nvim" -- 左则git提示
 
@@ -73,30 +73,21 @@ return require('packer').startup(function(use)
 
   use { 'michaelb/sniprun', run = 'sh ./install.sh'}
 
-  use { "rose-pine/neovim", as = "rose-pine" }
-
   -- the fancy start screen for neovim
-  use {'mhinz/vim-startify'}
+  use { 'mhinz/vim-startify' }
 
-  use({
-    "aserowy/tmux.nvim",
-
-    config = function()
-      return require("tmux").setup({
-        copy_sync = {
-          enable = false
-        },
-      })
-    end
-  })
+  -- tmux integration for nvim features pane movement and resizing from within nvim.
+  use { "aserowy/tmux.nvim" }
 
   -- Improved Yank and Put functionalities for Neovim
-  use("gbprod/yanky.nvim")
-  require("yanky").setup({
-      -- your configuration comes here
-      -- or leave it empty to use the default settings
-      -- refer to the configuration section below
-  })
+  use { "gbprod/yanky.nvim" }
+
+  -- A minimal, stylish and customizable statusline, statuscolumn, and winbar for Neovim
+  use { 'freddiehaddad/feline.nvim'}
+
+  -- A highly customizable theme for vim and neovim with support for lsp,
+  -- treesitter and a variety of plugins.
+  use { "EdenEast/nightfox.nvim" }
 
   if packer_bootstrap then
     require('packer').sync()

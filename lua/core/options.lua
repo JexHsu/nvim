@@ -35,5 +35,3 @@ opt.smartcase = true
 -- 外观
 opt.termguicolors = true
 opt.signcolumn = "yes"
--- vim.cmd[[colorscheme tokyonight-moon]] -- strom day night moon ]]
-vim.cmd("colorscheme rose-pine-moon") --- -main -moon -dawn
