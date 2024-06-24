@@ -7,12 +7,12 @@ require("core.keymaps")
 --
 -- theme
 
-vim.cmd("colorscheme duskfox") -- nightfox dayfox dawnfox duskfox nordfox terafox carbonfox
-require("plugins/evil")
+vim.cmd("colorscheme carbonfox") -- nightfox dayfox dawnfox duskfox nordfox terafox carbonfox
+require("plugins/bubbles")
 
 
--- vim.cmd("colorscheme carbonfox") -- nightfox dayfox dawnfox duskfox nordfox terafox carbonfox
--- require("plugins/bubbles")
+-- vim.cmd("colorscheme duskfox") -- nightfox dayfox dawnfox duskfox nordfox terafox carbonfox
+-- require("plugins/evil")
 
 --
 require("plugins/nvim-tree")
@@ -22,6 +22,7 @@ require("plugins/cmp")
 require("plugins/comment")
 require("plugins/autopairs")
 require("plugins/bufferline")
+require("plugins/dashboard")
 require("plugins/gitsigns")
 require("plugins/telescope")
 require("plugins/fine-cmdline")

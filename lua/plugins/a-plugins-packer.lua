@@ -73,9 +73,6 @@ return require('packer').startup(function(use)
 
   use { 'michaelb/sniprun', run = 'sh ./install.sh'}
 
-  -- the fancy start screen for neovim
-  use { 'mhinz/vim-startify' }
-
   -- tmux integration for nvim features pane movement and resizing from within nvim.
   use { "aserowy/tmux.nvim" }
 
@@ -88,6 +85,12 @@ return require('packer').startup(function(use)
   -- A highly customizable theme for vim and neovim with support for lsp,
   -- treesitter and a variety of plugins.
   use { "EdenEast/nightfox.nvim" }
+
+  -- vim dashboard
+  use {
+    'nvimdev/dashboard-nvim',
+    requires = {'nvim-tree/nvim-web-devicons'}
+  }
 
   if packer_bootstrap then
     require('packer').sync()
