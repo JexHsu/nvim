@@ -82,15 +82,14 @@ return require('packer').startup(function(use)
   -- A minimal, stylish and customizable statusline, statuscolumn, and winbar for Neovim
   use { 'freddiehaddad/feline.nvim'}
 
-  -- A highly customizable theme for vim and neovim with support for lsp,
-  -- treesitter and a variety of plugins.
-  use { "EdenEast/nightfox.nvim" }
-
   -- vim dashboard
   use {
     'nvimdev/dashboard-nvim',
     requires = {'nvim-tree/nvim-web-devicons'}
   }
+
+  -- Soho vibes for Neovim
+  use {'rose-pine/neovim'}
 
   if packer_bootstrap then
     require('packer').sync()

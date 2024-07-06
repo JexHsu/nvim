@@ -6,13 +6,8 @@ require("core.keymaps")
 -- 插件
 --
 -- theme
-
-vim.cmd("colorscheme carbonfox") -- nightfox dayfox dawnfox duskfox nordfox terafox carbonfox
-require("plugins/bubbles")
-
-
--- vim.cmd("colorscheme duskfox") -- nightfox dayfox dawnfox duskfox nordfox terafox carbonfox
--- require("plugins/evil")
+require("plugins/rose-pine")
+require("plugins/lualine")
 
 --
 require("plugins/nvim-tree")
@@ -29,4 +24,3 @@ require("plugins/fine-cmdline")
 require("plugins/buldel")
 require("plugins/yanky")
 require("plugins/tmux")
-require("plugins/feline")
